@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Click Ejercicio2</title>
+</head>
+<body>
+    <button id="miButton2">
+        Haz click para contar (Ejercicio 2)
+    </button>
+    <p id="contadorClick">Clicks: 0</p>
+
+    <script>
+        const miButton2 = document.getElementById("miButton2");
+        const contadorClick = document.getElementById("contadorClick")
+
+        let clicks = 0;
+
+        miButton2.addEventListener("click", function(){
+            clicks++;
+            contadorClick.textContent = `Clicks: ${clicks}`;
+        })
+    </script>
+    
+</body>
+</html>
